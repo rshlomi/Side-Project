@@ -112,7 +112,8 @@ def accuracy_loss_monitor():
     print_batch_accuracy(test_data, test_targets, train=False)
     print("\n")
 
-"""The practical effect of choosing a **cross-entropy** loss function is that the membrane potential of the correct ouput (class) is "encouraged" to increase, while all of the others are reduced."""
+"""The practical effect of choosing a **cross-entropy** loss function is that the membrane potential of the correct ouput (class) is "encouraged" to increase,
+while all of the others are reduced."""
 
 loss = nn.CrossEntropyLoss()
 
@@ -238,7 +239,7 @@ def load_display_id(path: str) -> int:
   return idx[0].numpy().astype(int) # convert to plain (non-array) int
 
 # To upload from Google Drive:
-# drive.mount('/content/drive')
+drive.mount('/content/drive')
 #img_url = '/content/drive/MyDrive/Colab Notebooks/five_002.png'
 
 # To upload from local machine, choose "Upload to session storage" (left tab)
